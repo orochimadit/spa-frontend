@@ -47,24 +47,39 @@ function SideNav() {
           </a>
           <ul className="nav nav-treeview">
             <li className="nav-item">
-            <NavLink to="/funds" className="nav-link">
-            <i className="far fa-circle nav-icon" />Asal Dana</NavLink>
+              <NavLink to="/funds" className="nav-link">
+              <i className="far fa-circle nav-icon" />Asal Dana</NavLink>
             </li>
             <li className="nav-item">
-              <a href="./index2.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Dashboard v2</p>
-              </a>
+              <NavLink to="/materials" className="nav-link">
+              <i className="far fa-circle nav-icon" />Bahan</NavLink>
             </li>
             <li className="nav-item">
-              <a href="./index3.html" className="nav-link">
-                <i className="far fa-circle nav-icon" />
-                <p>Dashboard v3</p>
-              </a>
+              <NavLink to="/merks" className="nav-link">
+              <i className="far fa-circle nav-icon" />Merk</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/types" className="nav-link">
+              <i className="far fa-circle nav-icon" />Type</NavLink>
             </li>
           </ul>
         </li>
-        
+        <li className="nav-item menu-open">
+          <a href="#" className="nav-link active">
+            <i className="nav-icon fas fa-tachometer-alt" />
+            <p>
+              Buku Inventory
+              <i className="right fas fa-angle-left" />
+            </p>
+          </a>
+          <ul className="nav nav-treeview">
+            <li className="nav-item">
+              <NavLink to="/funds" className="nav-link">
+              <i className="far fa-circle nav-icon" />Buku Inventory
+              </NavLink>
+            </li>  
+          </ul>
+        </li>
       </ul>
     </nav>
     {/* /.sidebar-menu */}
