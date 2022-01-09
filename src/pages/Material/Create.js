@@ -5,25 +5,25 @@ import Axios from 'axios';
 
 const Create = () => {
     const history = useHistory();
-    const [fund, setFund] = React.useState({
+    const [material, setMaterial] = React.useState({
         name:'',
         description:''
     })
 
     const handleChange = (e, name) =>{
         const value = e.target.value
-        setFund({
-            ...fund,[name]:value
+        setMaterial({
+            ...material,[name]:value
         })
     }
     const handleSubmit = async(e) =>{
         e.preventDefault()
         try{
-            const response = await Axios.post('http://localhost:3030/api/funds',fund)
+            const response = await Axios.post('http://localhost:3030/api/materials',material)
             const {status, message} = response.data
             if(status ==='success'){
                 alert(message)
-                history.push('/funds')
+                history.push('/materials')
             }else{
                 alert(message)
             }
@@ -37,19 +37,19 @@ const Create = () => {
   {/* general form elements */}
   <div className="card card-primary">
     <div className="card-header">
-      <h3 className="card-title">Dana</h3>
+      <h3 className="card-title">Bahan</h3>
     </div>
     {/* /.card-header */}
     {/* form start */}
     <form>
       <div className="card-body">
         <div className="form-group">
-          <label htmlFor="name">Nama asal Dana</label>
-          <input type="text" className="form-control"  placeholder="Masukan data" size={50} value={fund.name} onChange={(e)=> handleChange(e, 'name')} />
+          <label htmlFor="name">Nama Bahan</label>
+          <input type="text" className="form-control"  placeholder="Masukan data" size={50} value={material.name} onChange={(e)=> handleChange(e, 'name')} />
         </div>
         <div className="form-group">
           <label htmlFor="description">Description</label>
-          <input type="text" className="form-control"  placeholder="masukkan data" value={fund.description} onChange={(e) =>handleChange(e, 'description')} />
+          <input type="text" className="form-control"  placeholder="masukkan data" value={material.description} onChange={(e) =>handleChange(e, 'description')} />
         </div>
         
      

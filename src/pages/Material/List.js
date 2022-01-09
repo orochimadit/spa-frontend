@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory,Link } from 'react-router-dom'
 import axios from 'axios';
 const List = () => {
   const [materials, setMaterials] = React.useState([]);
@@ -28,7 +28,7 @@ const List = () => {
                 <div className="row">
                     <div className="col-sm-8"><h2>Bahan <b></b></h2></div>
                     <div className="col-sm-4">
-                        <button type="button" className="btn btn-info add-new"><i className="fa fa-plus"></i> Tambah Baru</button>
+                       <Link to="/material/create"> <button type="button" className="btn btn-info add-new"><i className="fa fa-plus"></i> Tambah Baru</button></Link>
                     </div>
                 </div>
       </div>
