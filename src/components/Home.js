@@ -1,12 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect, Link } from 'react-router-dom';
-import Fund from '../pages/Fund/List'
-import Material from '../pages/Material/List'
-import FundCreate from '../pages/Fund/Create'
-import Merk from '../pages/Merk/List';
-import Type from '../pages/Type/List';
-import InventoryBook from '../pages/InventoryBook/List';
 
+import routes from '../Routes/routes';
 function Home() {
     return (
         <div>
@@ -32,12 +27,22 @@ function Home() {
   <section className="content">
   
       <Switch>
-        <Route exact path='/funds' component={Fund}/>
+      {routes.map((route, i) => {
+ const {
+ path,
+ Component
+ } = route
+ return <Route key={i} path={path}>
+ <Component />
+ </Route>
+ })}
+
+        {/* <Route exact path='/funds' component={Fund}/>
         <Route exact path='/materials' component={Material}/>
-        <Route exact path='/create' component={FundCreate}/>
+        <Route exact path='/funds/create' component={FundCreate}/>
         <Route path='/types' component={Type}/>
         <Route path='/merks' component={Merk}/>
-        <Route path='inventory-books' component={InventoryBook}/>
+        <Route path='inventory-books' component={InventoryBook}/> */}
       </Switch>
   </section>
   {/* /.content */}

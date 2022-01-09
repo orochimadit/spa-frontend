@@ -32,6 +32,7 @@ const List = () => {
                     </div>
                 </div>
       </div>
+      <a href="/fund/create">+ CREATE</a>
       <table className="table table-hover text-nowrap">
         <thead>
           <tr>
