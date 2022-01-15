@@ -64,11 +64,11 @@ function SideNav() {
             </li>
           </ul>
         </li>
-        <li className="nav-item menu-open">
-          <a href="#" className="nav-link active">
+        <li className="nav-item ">
+          <a href="#" className="nav-link">
             <i className="nav-icon fas fa-tachometer-alt" />
             <p>
-              Buku Inventory
+              Pengelola Aset Wakaf
               <i className="right fas fa-angle-left" />
             </p>
           </a>
@@ -76,6 +76,38 @@ function SideNav() {
             <li className="nav-item">
               <NavLink to="/funds" className="nav-link">
               <i className="far fa-circle nav-icon" />Buku Inventory
+              </NavLink>
+            </li>  
+          </ul>
+        </li>
+        <li className="nav-item ">
+          <a href="#" className="nav-link">
+            <i className="nav-icon fas fa-tachometer-alt" />
+            <p>
+            Santri Penerima Amanah
+              <i className="right fas fa-angle-left" />
+            </p>
+          </a>
+          <ul className="nav nav-treeview">
+            <li className="nav-item">
+              <NavLink to="/funds" className="nav-link">
+              <i className="far fa-circle nav-icon" />Santri
+              </NavLink>
+            </li>  
+          </ul>
+        </li>
+        <li className="nav-item ">
+          <a href="#" className="nav-link">
+            <i className="nav-icon fas fa-tachometer-alt" />
+            <p>
+            Machine
+              <i className="right fas fa-angle-left" />
+            </p>
+          </a>
+          <ul className="nav nav-treeview">
+            <li className="nav-item">
+              <NavLink to="/machine/create" className="nav-link">
+              <i className="far fa-circle nav-icon" />Santri
               </NavLink>
             </li>  
           </ul>

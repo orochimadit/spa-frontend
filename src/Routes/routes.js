@@ -9,6 +9,7 @@ const MerkList = React.lazy(() => import('../pages/Merk/List'))
 const MerkCreate = React.lazy(() => import('../pages/Merk/Create'))
 const TypeList = React.lazy(() => import('../pages/Type/List'))
 const TypeCreate = React.lazy(() => import('../pages/Type/Create'))
+const MachineCreate = React.lazy(() => import('../pages/Machine/Create'))
 const routes = [
  { path: '/fund/create', Component: FundCreate },
  { path: '/funds', Component: FundList },
@@ -18,6 +19,7 @@ const routes = [
  { path: '/merks', Component: MerkList },
  { path: '/types', Component: TypeList },
  { path: '/type/create', Component: TypeCreate },
+ { path: '/machine/create', Component: MachineCreate },
 //  { path: '/', Component: Home }
 ]
 export default routes
