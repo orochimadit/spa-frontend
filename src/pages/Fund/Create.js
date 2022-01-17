@@ -19,7 +19,7 @@ const Create = () => {
     const handleSubmit = async(e) =>{
         e.preventDefault()
         try{
-            const response = await Axios.post('http://localhost:3030/api/funds',fund)
+            const response = await Axios.post('https://spa-api.aqiladigital.com/api/funds',fund)
             const {status, message} = response.data
             if(status ==='success'){
                 alert(message)
