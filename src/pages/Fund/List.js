@@ -6,7 +6,7 @@ const List = () => {
   const [funds, setFunds] = React.useState([]);
   const history = useHistory()
   React.useEffect(() => {
-    axios.get('http://localhost:3030/api/funds')
+    axios.get('https://spa-api.aqiladigital.com/api/funds')
       .then(response => {
         const { status, message, data } = response.data
         if (status === 'success') {

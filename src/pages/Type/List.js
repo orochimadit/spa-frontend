@@ -8,7 +8,7 @@ const List = () => {
   const [types, setTypes] = React.useState([]);
   const history = useHistory()
   React.useEffect(() => {
-    axios.get('http://localhost:3030/api/types')
+    axios.get('https://spa-api.aqiladigital.com/api/types')
       .then(response => {
         const { status, message, data } = response.data
         if (status === 'success') {

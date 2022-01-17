@@ -6,7 +6,7 @@ const List = () => {
   const [materials, setMaterials] = React.useState([]);
   const history = useHistory()
   React.useEffect(() => {
-    axios.get('http://localhost:3030/api/materials')
+    axios.get('https://spa-api.aqiladigital.com/api/materials')
       .then(response => {
         const { status, message, data } = response.data
         if (status === 'success') {

@@ -6,7 +6,7 @@ const List = () => {
   const [merks, setMerks] = React.useState([]);
   const history = useHistory()
   React.useEffect(() => {
-    axios.get('http://localhost:3030/api/merks')
+    axios.get('https://spa-api.aqiladigital.com/api/merks')
       .then(response => {
         const { status, message, data } = response.data
         if (status === 'success') {
