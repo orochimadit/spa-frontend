@@ -5,9 +5,13 @@ import SideNav from './components/SideNav';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './app/store';
+import { listen } from './app/listener';
 import './App.css';
 
 function App() {
+  React.useEffect(()=>{
+    listen();
+  },[]);
   return (
     <Provider store={store}>
     <React.Suspense fallback={<div>Loading...</div>}>
