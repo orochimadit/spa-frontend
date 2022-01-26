@@ -9,6 +9,7 @@ import { listen } from './app/listener';
 import './App.css';
 
 function App() {
+  //panggil fungsi listen () sekali saja saat komponen selesai render pertama kali
   React.useEffect(()=>{
     listen();
   },[]);

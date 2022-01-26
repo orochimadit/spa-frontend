@@ -1,5 +1,6 @@
 import store from "./store";
 
+let currentAuth;
 function listener(){
     //nilai variabel previousAuth dan berikan currentAUth sebagai nilai
     let previousAuth = currentAuth;
