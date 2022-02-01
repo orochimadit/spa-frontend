@@ -24,6 +24,9 @@ export default function reducer (state = initialState, action){
             return {...state, status: statusList.process}
         case ERROR_FETCHING_INVENTORY_BOOK:
             return {...state, status:statusList.error}
+        case SUCCESS_FETCHING_INVENTORY_BOOK:
+            return {...state, data:action.data , totalItems:action.count,
+                status:statusList.success}
         default:
             return state;
     }
