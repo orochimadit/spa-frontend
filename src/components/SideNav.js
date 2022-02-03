@@ -74,7 +74,7 @@ function SideNav() {
           </a>
           <ul className="nav nav-treeview">
             <li className="nav-item">
-              <NavLink to="/funds" className="nav-link">
+              <NavLink to="/inventoryBooks" className="nav-link">
               <i className="far fa-circle nav-icon" />Buku Inventory
               </NavLink>
             </li>  
@@ -90,7 +90,7 @@ function SideNav() {
           </a>
           <ul className="nav nav-treeview">
             <li className="nav-item">
-              <NavLink to="/funds" className="nav-link">
+              <NavLink to="/inventoryBook" className="nav-link">
               <i className="far fa-circle nav-icon" />Santri
               </NavLink>
             </li>  

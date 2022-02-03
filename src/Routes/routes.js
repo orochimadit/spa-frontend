@@ -11,6 +11,7 @@ const TypeList = React.lazy(() => import('../pages/Type/List'))
 const TypeCreate = React.lazy(() => import('../pages/Type/Create'))
 const MachineCreate = React.lazy(() => import('../pages/Machine/Create'))
 const InventoryBooksList = React.lazy(() => import('../pages/InventoryBook/List'))
+const InventoryBooksCreate = React.lazy(() => import('../pages/InventoryBook/Create'))
 const routes = [
  { path: '/fund/create', Component: FundCreate },
  { path: '/funds', Component: FundList },
@@ -22,6 +23,7 @@ const routes = [
  { path: '/type/create', Component: TypeCreate },
  { path: '/machine/create', Component: MachineCreate },
  { path: '/inventoryBooks', Component: InventoryBooksList },
+ { path: '/inventoryBook/Create', Component: InventoryBooksCreate },
 //  { path: '/', Component: Home }
 ]
 export default routes

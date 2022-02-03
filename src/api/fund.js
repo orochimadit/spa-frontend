@@ -2,5 +2,5 @@ import axios from 'axios';
 import { config } from '../config';
 
 export async function getFunds(){
-    return await axios.get(`${config.api_host}/api/funds`);
+    return await axios.get(`${window.env.REACT_APP_API_HOST}/api/funds`);
 }   
